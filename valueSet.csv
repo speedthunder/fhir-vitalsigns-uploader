@@ -1,4 +1,0 @@
-Item_Name,LOINC_Code,Unit_Display,UCUM_Code,System_LOINC,System_UCUM
-體溫,8310-5,攝氏度,Cel,http://loinc.org,http://unitsofmeasure.org
-心率,8867-4,次/分,/min,http://loinc.org,http://unitsofmeasure.org
-脈搏血氧,59408-5,百分比,%,http://loinc.org,http://unitsofmeasure.org

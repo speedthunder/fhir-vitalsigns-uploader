@@ -1,0 +1,12 @@
+Field,Path,Type,Mandatory,Description,Notes
+資源類型,resourceType,code,Yes,固定為 Observation,
+資源 ID,id,id,No,資源在伺服器上的唯一編號,由伺服器產生
+狀態,status,code,Yes,資源狀態,"final, amended"
+分類,category,CodeableConcept,Yes,區分資料類型,固定為 vital-signs
+項目代碼,code,CodeableConcept,Yes,量測項目的類型,"LOINC, 如體溫 8310-5"
+受檢者,subject,Reference,Yes,指向量測的對象,Patient/example-id
+執行時間,effectiveDateTime,dateTime,Yes,實際量測的時間,ISO 8601 格式
+量測值,valueQuantity.value,decimal,Yes,量測的數據數值,37.2
+單位,valueQuantity.unit,string,Yes,數值的顯示單位,"攝氏度, 次/分, 百分比"
+單位代碼,valueQuantity.code,code,Yes,符合 UCUM 標準的單位代碼,"Cel, /min, %"
+單位代碼系統,valueQuantity.system,uri,Yes,單位代碼系統 URL,http://unitsofmeasure.org
